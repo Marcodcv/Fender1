@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.104.2">
+        
+    
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    
+        
+    
+        
+    
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/bootstrap.css" media="all">
+    <link rel="stylesheet" href="../css/bootstrap-responsive.css" media="all">
+    <link rel="stylesheet" href="../css/estilo2.css">
+
+    <link rel="icon" href="../img/logo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $('.dropdown-toggle').dropdown();
+        }
+        );
+    </script>
+     <div class="interior">
+        <a href="https://www.fender.com/es/start    " class="logo" target="blank"><img src="../img/fender-guitars-logo.svg" alt="Logo"></a>
+        <nav class="navegacion">
+          <ul>
+            <li><a href="../index.html" >Inicio</a></li>
+            <li><a href="https://www.fender.com/online-guitar-tuner" target="_blank">Online Guitar Tuner</a></li>
+            <li class="submenu">
+              <a href="https://www.fender.com/es/electric-guitars/" target="blank">Productos</a>
+              <ul class="hijos">
+                <li><a href="https://www.fender.com/es/electric-guitars/" target="blank">Guitarras Electricas</a></li>
+                <li><a href="https://www.fender.com/es/electric-guitars/stratocaster/" target="blank">Stratocaster</a></li>
+                <li><a href="https://www.fender.com/es/electric-guitars/telecaster/" target="blank">Telecaster</a></li>
+                <li><a href="https://www.fender.com/es/guitar-amplifiers/" target="blank">Guitar Amplifiers</a></li>
+                <li><a href="https://www.fender.com/es/electric-basses/" target="blank">Bajos</a></li>
+                <li><a href="https://www.fender.com/es/acoustic-guitars/" target="blank">Guitarras Acústicas</a></li>
+                <li><a href="https://www.fendercustomshop.com" target="blank">Fender Custom Shop</a></li>
+              </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+        <h1>Stop Staring, Start Playing¡</h1>
+      </div>
+      <title>Compra</title>
+</head>
+<body>  
+  
+   <div class="cont">
+    <br>  
+      <Form class="form" action="../php/compra.php" method="post">
+        <h1 id="Title">Carrito de Compras</h1>
+        <br>
+        <h3>Datos Personales</h3>
+        <div class="texto">
+          <div class="datos">
+            Nombre: <br><input type="text" name="nom" id="" placeholder="Nombre Completo"> <br>
+            Email: <br> <input type="email" name="correo" id="" placeholder="Correo"><br>
+            Direccion: <br><input type="text" name="direccion" id="" placeholder="Av.De las grangas...">
+          </div>
+          <div class="info">
+            Contraseña:<br>
+            <input type="password" name="contraseña" id="" placeholder="********"><br>
+            Telefono: <br>
+            <input type="Tel" name="telefono" id="" placeholder="55-98654256"><br>
+            Fecha de Compra: <br> 
+            <input type="date" name="fecha" id="" >
+            
+          </div>
+        </div>
+        <h3>Pedido</h3>
+        <div class="tipo">
+
+          <div class="guit">
+        <h5>Elije un tipo de Guitarra/Bajo:</h5><select name="Tipo" id="tipo">
+          <optgroup label="Guitarras" >
+             <option value="Electrica">Electrica</option>
+             <option value="Acustica">Acustica</option>
+             <option value="ElectroAcustica">ElectroAcustica</option>
+          </optgroup>
+          <optgroup label="Bajos">
+             <option value="5 cuerdas">5 Cuerdas</option>
+             <option value="4 Cuerdas">4 Cuerdas</option>
+             <option value="6 Cuerdas">6 Cuerdas</option>
+          </optgroup>
+          </select><br>
+          <h6 >Cantidad:</h6>
+          <input type="number" name="Cantidad" id="" placeholder="0-9">
+        </div>
+
+          <div class="extra"><h5>Articulos Extras:</h5> 
+            <label>Capotraste $200 <input type="checkbox" name="Capotraste" value="Capotraste" ></label><br>
+            <label>Cuerdas $320 <input type="checkbox" name="Cuerdas" id="" value="Cuerdas"></label><br>
+            <label>Plumillas $10 <input type="checkbox" name="Plumillas" value="Plumillas" ></label><br>
+            <label>Funda/Estuche $1200 <input type="checkbox" name="Funda" value="Funda"></labelname=>
+          </div>
+        </div>
+        <br>
+        <div class="formpag">
+        <div class="pago">
+          <h3>Forma de pago</h3>
+          <h6>Tarjeta:</h6>
+          <label>
+            <input type="radio" name="pago" id="radio1" value="Debito">
+            Debito
+          </label>
+          <label>
+            <input type="radio" name="pago" id="radio2" value="Credito">
+            Credito
+          </label>
+        </div>
+        <div class="referencias">
+          <h6>Referencias:</h6><textarea name="referencias" id="" cols="120" rows="3"></textarea>
+        </div>
+        <br>
+        <br>
+      </div>
+      <br>
+      <div class="btn-item">
+        <input type="submit" class="btn-ghost round"  type="submit"/>
+        <a href="../index.html" class="btn-ghost secundary round">Home</a>
+       </div>
+      </form>
+      <br>
+        <footer class="container">
+          <p class="float-end"><a href="#">Back to top</a></p>
+          <p> Copyright &copy;2022. Fender Musical Instruments Corporation. All Rights Reserved. &middot; <a href="https://www.fender.com/es/privacy-policy" target="_blank">Politica de Privacidad</a> &middot; <a href="https://www.fender.com/es/term-of-use" target="_blank">Condiciones de uso</a></p>
+        </footer>
+      </main>
+    </div>  
+   
+</body>
+</html>

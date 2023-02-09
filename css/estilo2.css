@@ -1,0 +1,310 @@
+/* Web general*/ 
+@font-face {
+    font-family: 'Compra';
+    src: url(../font/Birds\ of\ Paradise\ ©\ PERSONAL\ USE\ ONLY.ttf);
+}
+@font-face {
+    font-family: 'logo';
+    src: url(../font/Hello\ Valentina.ttf);
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Open Sans", sans-serif;
+}
+body{
+	background: rgb(0, 0, 0);
+    font-family: 'Robot', sans-serif;
+}
+P{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family:'logo';
+}
+.cont .form #Title{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family:'Compra';
+}
+h2{
+    text-align: center;
+    color: rgb(49, 49, 49);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h5{
+    text-align: center;
+    color: rgb(100, 9, 9);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h6 {
+    text-align: left;
+    color: rgb(100, 9, 9);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*Menu de Navegacion */ 
+header{
+	width: 100%;
+	height: 90px;
+	background-color: #0b132b;
+}
+.interior{
+	max-width: 130%;
+	padding: 20px 10px;
+	margin: auto;
+}
+.logo{
+	float: left;
+	padding: 5px 20px 0;
+}
+.logo img{
+	height: 50px;
+}
+.logo img:hover{
+	transform: scale(1.1);
+}
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: gray;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #00c9bd;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .hijos{
+	display: block;
+}
+.navegacion .submenu .hijos{
+	display: none;
+	background: #fff;
+	position: absolute;
+	width: 130%;
+}
+.navegacion .submenu .hijos li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .submenu .hijos li a{
+	display: block;
+}
+/*Redes Sociales */ 
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a{
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+.dropdown-content a:hover{
+    color: #ffffff;
+    background-color: #00a4bd;
+}
+:root{
+    --facebook:#3b5999;
+    --twitter:#55acee;
+    --youtube:#bd081c;
+    --radio:rgb(187, 89, 23);
+}
+.redes-container{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+.redes-container ul li{
+    display: inline-block ;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.redes-container ul li a{
+    display: block;
+    padding: 0 10px;
+    background: #333;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2);
+    transition: .2s;
+}
+.redes-container ul:hover a{
+    filter: blur(1px);
+}
+.redes-container ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+    filter: none;
+}
+.redes-container ul li .facebook:hover{
+    background: var(--facebook);
+}
+.redes-container ul li .Twitter:hover{
+    background: var(--twitter);
+}
+.redes-container ul li .Youtube:hover{
+    background: var(--youtube);
+}
+.redes-container ul li .radio:hover{
+    background: var(--radio);
+}
+p .img{
+    text-align: center;
+}
+.carousel-caption.text-end h1{
+    color: #fff;
+  }
+  .carousel-caption h1{
+    color: #fff;
+  }
+  .carousel-caption.text-start h1{
+    color: #fff;
+  }
+  .carousel-caption p{
+    color: rgb(161, 161, 161);
+    text-align: center;
+  }
+ 
+/*login*/
+.cont{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ), url(../img/compra.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.form{
+    width: 85%;
+    max-width: 630px;
+    margin:auto;
+    background: rgb(255, 255, 255);
+    padding: 2em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+}
+.formulario{
+    width: 85%;
+    max-width: 630px;
+    margin:auto;
+    background: rgb(255, 255, 255);
+    padding: 2em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+}
+/*Estructura*/
+div.tipo{
+    display: flex;
+
+    
+}
+div.guit{
+    margin-left: 15px;
+}
+div.datos{
+    margin-left: 15px;
+}
+div.extra{
+    margin-left: 75px;
+}
+footer.container{
+    color: rgb(179, 178, 178);
+}
+div.texto{
+    display: flex;
+}
+div.info{
+    margin-left: 60px;
+}
+.pago{
+    margin-left: 15px;
+}
+.formpag{
+    display: flex;
+}
+.referencias{
+    margin-left: 70px;
+}
+
+/*Botones de Home y Compra*/
+.btn-ghost{
+    position: relative;
+    display: inline-block;
+    border: 2px solid rgb(78, 9, 9);
+    padding: 10px 80px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: rgb(78, 9, 9);
+    transition: color 0.5s, background 0.5s;
+    margin-left: 25px;
+}
+.btn-ghost.round{
+    border-radius: 30px;
+}
+.btn-ghost.secundary{
+    background-color: transparent;
+    color: black;
+}
+.btn-ghost:hover{
+    color: rgb(0, 0, 0);
+    background: white;
+}
+.btn-ghost.secundary:hover{
+    color: white;
+    background: rgb(78,9,9);
+}
+/*Tabla*/
+table{
+    width: 100%;
+    text-align: left;
+}
+td{
+    border: solid 1px;
+}
